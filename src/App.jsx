@@ -13,7 +13,7 @@ const App = () => {
       <section className="birthday-message">
         <div className="birthday-header">
           <Lottie animationData={Celebrate} loop={true} autoplay={true} style={{ width: '200px', height: '200px' }} />
-          <h1 className="message-title">From David Bilson to Stephen Vizzusi</h1>
+          <h1 className="message-title">Happy Birthday Stephen Vizzusi</h1>
         </div>
 
         <p className="message-paragraph">Dear Stephen,</p>
