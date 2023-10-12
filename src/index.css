@@ -1,17 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&family=Shantell+Sans:ital,wght@1,300&display=swap');
+
 *, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Shantell Sans', cursive;
 }
-.birthday-message {
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(29, 29, 29);
+  padding:20px;
+}
+.showBirthday {
+  padding: 13px 26px;
+  font-weight: 600;
+  border:none;
+  border-radius: 6px;
+  background-color: rgb(0, 111, 221);
+  color:white;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+}
+.showBirthday:hover {
+  transition: .6s ease-in-out;
+  box-shadow: 0px 0px 50px black;
+  background: grey;
+}
+.birthday-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.closeBirthday {
+  padding: 13px 26px;
+  font-weight: 600;
+  border:none;
+  border-radius: 6px;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,121,50,1) 35%, rgba(0,212,255,1) 100%);
+  color:white;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+}
+.closeBirthday:hover {
+  transition: .6s ease-in-out;
+  box-shadow: 0px 0px 50px black;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,50,1) 35%, rgba(0,212,255,1) 100%);
+}
+.birthday-container {
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  position: absolute;
+  margin: 20px;
+  top:20px;
+  max-height: calc(90vh - 20px);
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  z-index: 5;
+  backdrop-filter: blur(16px) saturate(179%);
+  -webkit-backdrop-filter: blur(26px) saturate(179%);
+  background-color: rgba(17, 25, 40, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.birthday-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: inherit;
+}
+.birthday-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.birthday-container::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 .message-title {
-
+  background: -webkit-linear-gradient(#00ca4e, #1b2cc7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 .message-paragraph {
-
+  color: lightgrey;
 }
 .message-sender {
-  
+  color: #00ca4e;
+  font-weight: 500;
 }
